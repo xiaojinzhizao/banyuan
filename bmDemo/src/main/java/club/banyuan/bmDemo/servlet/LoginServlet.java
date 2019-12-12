@@ -1,5 +1,6 @@
 package club.banyuan.bmDemo.servlet;
 
+import org.apache.commons.lang3.StringUtils;
 import org.apache.log4j.Logger;
 
 import javax.servlet.ServletException;
@@ -41,9 +42,12 @@ public class LoginServlet extends HttpServlet {
         logger.debug("userName"+userName);
         logger.debug("passWord"+passWord);
 
-        resp.sendRedirect("index.html");
+        if(StringUtils.equals("Banyuan",userName)){
+            resp.sendRedirect("index.html");
+        }
+        else {
+            resp.sendRedirect("404.html");
+        }
 
-
-//        super.doPost(req, resp);
     }
 }

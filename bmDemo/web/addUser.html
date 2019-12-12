@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>添加用户</title>
+    <style>
+
+        #adddiv {
+            margin: 0 auto;
+            width: 300px;
+        }
+
+        input[type=text]{
+            outline-style: none ;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            padding: 6px 14px;
+            width: 200px;
+            font-size: 16px;
+            margin-left: 10px;
+            /*font-weight: 700;*/
+            /*font-family: "Microsoft soft";*/
+        }
+
+        .info{
+            padding-top: 10px;
+        }
+
+        button[type=submit] {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 6px 15px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            border-radius: 4px;
+        }
+
+        button[type=reset] {
+            background-color: #4589af; /* Green */
+            border: none;
+            color: white;
+            padding: 6px 15px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            border-radius: 4px;
+        }
+
+        input[type=submit] {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 10px 15px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            border-radius: 4px;
+            margin-top: 10px;
+            float: right;
+        ;
+        }
+
+        input[type=reset] {
+            background-color: #4589af; /* Green */
+            border: none;
+            color: white;
+            padding: 10px 15px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            border-radius: 4px;
+            margin-top: 10px;
+        }
+
+        .ts{
+            width: 100px;
+            display: inline;
+        }
+
+        #name{
+            margin-left: 28px;
+        }
+
+    </style>
+</head>
+<body>
+<div id = "adddiv">
+    <form action="addUser.jsp" method="post">
+        <div class="info" ><div class="ts">姓名:</div><input type="text" name="name" id="name"><br></div>
+        <div class="info"><div class="ts">登录名:</div><input type="text" name="loginname"><br></div>
+        <div class="info"><div class="ts">用户id:</div><input type="text" name="userid"><br></div>
+        <input type="submit" name="submit">
+        <input type="reset" name="reset">
+    </form>
+</div>
+
+</body>
+</html>

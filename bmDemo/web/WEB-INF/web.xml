@@ -20,6 +20,15 @@
             <param-value>"紫东"</param-value>
         </init-param>
     </servlet>
+
+    <servlet-mapping>
+        <servlet-name>LoadUser</servlet-name>
+        <url-pattern>/loadUsr</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>LoadUser</servlet-name>
+        <servlet-class>club.banyuan.bmDemo.servlet.LoadUserServlet</servlet-class>
+    </servlet>
     
     <welcome-file-list>
         <welcome-file>login.html</welcome-file>
